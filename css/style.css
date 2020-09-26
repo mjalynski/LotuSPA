@@ -156,8 +156,8 @@ p {
   color: #e6e1e8;
 }
 .section-offer .container .row .img-box img {
-  width: 100%
-							width:75%;
+  width: 100%;
+  height: 100%;
 }
 .admission {
   padding-top: 70px;
@@ -246,10 +246,10 @@ p {
 }
 .section-about .row .col-sm-12.text-box h4 {
   font-family: 'Oswald', sans-serif;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   font-size: 40px;
-  color: #e66393;
+  color: #f7b42f;
 }
 .section-about .row .col-sm-12.text-box p {
   color: #ffffff;
@@ -486,12 +486,16 @@ p {
 .about-us .container .row .text-box p {
   color: #777777;
 }
-.about-us .container .row .text-box .service {
+.about-us .container .row .service {
   display: inline-block;
   text-align: center;
   width: 32%;
+  padding-top: 50px;
 }
-.about-us .container .row .text-box .service .fas {
+.about-us .container .row .service a {
+  color: #777777;
+}
+.about-us .container .row .service a .fas {
   border-radius: 40px;
   border-color: #f7b42f;
   padding: 27px 27px;
@@ -499,12 +503,20 @@ p {
   background: #f7b42f;
   font-size: 25px;
 }
-.about-us .container .row .text-box .service .fa-child {
+.about-us .container .row .service a .fa-child {
   padding: 27px 30px;
 }
-.about-us .container .row .text-box .service .service-desc {
+.about-us .container .row .service a .service-desc {
   width: 65%;
   text-align: center;
+}
+.about-us .container .row .service:hover a {
+  text-decoration: none;
+}
+.about-us .container .row .service:hover .fas {
+  border-color: #63475e;
+  color: #e66393;
+  background: #63475e;
 }
 .section-our-team {
   background-color: #e6e1e8;
@@ -955,8 +967,8 @@ p {
   color: #63475e;
 }
 .footer-nav .container .row .col-sm-4 iframe {
-  width: 330px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 footer {
   background: #63475e;
@@ -967,8 +979,14 @@ footer .container .row p {
   padding-top: 15px;
 }
 @media (max-width: 320px) {
+  .navbar-brand {
+    width: 40%;
+  }
+  .navbar-brand img {
+    width: 55%;
+  }
   .slide .container .row .slider-img {
-    display: flex;
+    display: none;
   }
 }
 @media (min-width: 320px) {
@@ -998,7 +1016,7 @@ footer .container .row p {
     font-size: 17px;
   }
   .navbar-brand {
-    width: 30%;
+    width: 20%;
     padding-left: 20px;
   }
   .navbar-brand img {
@@ -1039,6 +1057,15 @@ footer .container .row p {
   .section-comments .container .row .comment-box .comment-text .comment-person {
     padding-left: 50px;
     padding-right: 40px;
+  }
+}
+@media (min-width: 576px) {
+  .navbar-brand {
+    width: 15%;
+    padding-left: 20px;
+  }
+  .navbar-brand img {
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -1109,6 +1136,26 @@ footer .container .row p {
   .slide .container .row .slider-img {
     display: flex;
   }
+  .section-social .container .row .socials a .fab {
+    padding-top: 5px;
+  }
+  .section-comments .container .row .comment-box .comment-text {
+    margin-left: 70px;
+    text-align: left;
+  }
+  .section-comments .container .row .comment-box .comment-text .comment-title {
+    padding-left: 80px;
+  }
+  .section-comments .container .row .comment-box .comment-text .comment-desc {
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+  .section-comments .container .row .comment-box .comment-text .comment-person {
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 992px) {
   .section-services .container {
     background: url('../img/sexy-3295729_1280(4).jpg');
     background-size: cover;
@@ -1153,23 +1200,5 @@ footer .container .row p {
     padding-right: 10px;
     padding-top: 5px;
     color: #f7b42f;
-  }
-  .section-social .container .row .socials a .fab {
-    padding-top: 5px;
-  }
-  .section-comments .container .row .comment-box .comment-text {
-    margin-left: 70px;
-    text-align: left;
-  }
-  .section-comments .container .row .comment-box .comment-text .comment-title {
-    padding-left: 80px;
-  }
-  .section-comments .container .row .comment-box .comment-text .comment-desc {
-    padding-left: 100px;
-    padding-right: 30px;
-  }
-  .section-comments .container .row .comment-box .comment-text .comment-person {
-    padding-left: 100px;
-    padding-right: 30px;
   }
 }

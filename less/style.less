@@ -193,8 +193,8 @@ p{
 					}
 					.img-box{
 						img{
-							width:100%
-							width:75%;
+							width:100%;
+							height:100%;
 						}
 					}
 					
@@ -317,10 +317,10 @@ p{
 			padding:30px;
 				h4{
 					font-family:@headings-font;
-					padding-top:100px;
-					padding-bottom:50px;
+					padding-top:70px;
+					padding-bottom:70px;
 					font-size:@headings-middle-desktop;
-					color:@pink;
+					color:@gold;
 				}
 				p{
 					color:@white;
@@ -607,7 +607,6 @@ p{
 				border-bottom:6px solid;
 				border-left:6px solid;
 				border-color:@pink;
-				
 				.about-img{
 					height: 100%;
 					width: 100%;
@@ -621,25 +620,41 @@ p{
 				p{
 					color:@middle-gray;
 				}
-				.service{
-					display:inline-block;
-					text-align: center;
-					width:32%;
+			}
+			.service{
+				display:inline-block;
+				text-align: center;
+				width:32%;
+				padding-top:50px;
+				a{
+					color:@middle-gray;
+					.fas{
+						border-radius:40px;
+						border-color:@gold;
+						padding:27px 27px;
+						color:@white;
+						background:@gold;
+						font-size:@paragraph-middle-desktop;
+					}
+					.fa-child{
+						padding:27px 30px;
+					}
+					.service-desc{
+						width: 65%;
+						text-align: center;
+					}
+				}
+				&:hover{
+					a{
+						text-decoration:none;
+					}
+				}
+			}
+			.service:hover{
 				.fas{
-					border-radius:40px;
-					border-color:@gold;
-					padding:27px 27px;
-					color:@white;
-					background:@gold;
-					font-size:@paragraph-middle-desktop;
-				}
-				.fa-child{
-					padding:27px 30px;
-				}
-				.service-desc{
-					width: 65%;
-					text-align: center;
-				}
+					border-color:@dark-violet;
+					color:@pink;
+					background:@dark-violet;
 				}
 			}
 		}
@@ -1160,8 +1175,8 @@ p{
 					color:@dark-violet;
 				}
 				iframe{
-					width:330px;
-					height:200px;
+					width:100%;
+					height:auto;
 				}
 			}
 		}
@@ -1180,11 +1195,17 @@ footer{
 	}
 }
 @media(max-width: 320px) {
+	.navbar-brand{
+		width:40%;
+		img{
+			width:55%;
+		}
+	}
 	.slide{
 		.container{
 			.row{
 				.slider-img{
-					display:flex;
+					display:none;
 				}
 			}
 		}
@@ -1223,7 +1244,7 @@ footer{
 		}
 	}
 	.navbar-brand{
-		width:30%;
+		width:20%;
 		padding-left: 20px;
 		img{
 			width:100%;
@@ -1301,7 +1322,13 @@ footer{
 	}
 }
 @media(min-width:576px){
-
+	.navbar-brand{
+		width:15%;
+		padding-left: 20px;
+		img{
+			width:100%;
+		}
+	}
 }
 @media(min-width: 768px) {
 	.navbar{
@@ -1385,6 +1412,44 @@ footer{
 			}
 		}
 	}
+	.section-social{
+			.container{
+					.row{
+					.socials{
+						a{
+							.fab{
+								padding-top:5px;
+							}
+						}
+					}
+				}
+		}
+	}
+	.section-comments{
+		.container{
+			.row{
+				.comment-box{
+					.comment-text{
+						margin-left:70px;
+						text-align:left;
+							.comment-title{
+								padding-left:80px;
+							}
+							.comment-desc{
+								padding-left:100px;
+								padding-right:30px;
+							}
+							.comment-person{
+								padding-left:100px;
+								padding-right:30px;
+							}
+					}
+				}
+			}
+		}
+	}
+}
+@media(min-width: 992px) {
 	.section-services{
 			.container{
 				background:url('../img/sexy-3295729_1280(4).jpg');
@@ -1435,41 +1500,5 @@ footer{
 						}
 					}
 			}
-	}
-	.section-social{
-			.container{
-					.row{
-					.socials{
-						a{
-							.fab{
-								padding-top:5px;
-							}
-						}
-					}
-				}
-		}
-	}
-	.section-comments{
-		.container{
-			.row{
-				.comment-box{
-					.comment-text{
-						margin-left:70px;
-						text-align:left;
-							.comment-title{
-								padding-left:80px;
-							}
-							.comment-desc{
-								padding-left:100px;
-								padding-right:30px;
-							}
-							.comment-person{
-								padding-left:100px;
-								padding-right:30px;
-							}
-					}
-				}
-			}
-		}
 	}
 }
