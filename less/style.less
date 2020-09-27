@@ -459,15 +459,6 @@ p{
 		}
 	}
 	.light{
-
-		.col-sm-12{
-			h1{
-				color:@dark-violet;
-			}
-			.font-special{
-				color:@pink;
-			}
-		}
 		.service-title{
 			p{
 				color:@middle-gray;
@@ -481,7 +472,7 @@ p{
 				float:left;
 				h2,h3{
 					border-bottom:1px solid @light-violet;
-					color:@dark-violet;
+					color:@pink;
 				}
 			}
 		}
@@ -495,6 +486,11 @@ p{
 					i{
 
 						color:@gold;
+					}
+					span{
+						p{
+							color:@middle-gray;
+						}
 					}
 				}
 			}
@@ -850,7 +846,6 @@ p{
 			padding: 50px 0px;
 			
 			.table-box{
-				padding: 20px 60px;
 				padding-bottom:50px;
 				font-family:@headings-font;
 				font-size:@paragraph-light-desktop;
@@ -896,7 +891,6 @@ p{
 		.container{
 			padding: 50px 0px;
 			.table-box{
-				padding: 20px 60px;
 				padding-bottom:50px;
 				font-family:@headings-font;
 				font-size:@paragraph-light-desktop;
@@ -974,7 +968,7 @@ p{
 					padding:50px;
 				}
 			}
-			.col-md-3{
+			.col-md-5{
 				padding:10px;
 				
 				.input-btn {
@@ -1114,7 +1108,7 @@ p{
 				color:@white;
 				opacity:1;
 			}
-			.col-sm-4{
+			.contact-info{
 			
 				h3,h4{
 					color:@middle-violet;
@@ -1322,6 +1316,26 @@ footer{
 			}
 		}
 	}
+	.prices{
+		.dark{
+			.container{	
+				.table-box{
+					padding: 20px;
+					.table-title{
+						padding-bottom:10px;
+					}
+				}
+			}
+		}
+		.light{		
+			.container{
+				.table-box{
+					padding: 20px;
+					
+				}
+			}
+		}
+	}
 }
 @media(min-width:576px){
 	.navbar-brand{
@@ -1410,21 +1424,22 @@ footer{
 				}
 				.slider-img{
 					display:flex;
+					float:right;
 				}
 			}
 		}
 	}
 	.section-social{
-			.container{
-					.row{
-					.socials{
-						a{
-							.fab{
-								padding-top:5px;
-							}
+		.container{
+				.row{
+				.socials{
+					a{
+						.fab{
+							padding-top:5px;
 						}
 					}
 				}
+			}
 		}
 	}
 	.section-comments{
@@ -1446,6 +1461,26 @@ footer{
 								padding-right:30px;
 							}
 					}
+				}
+			}
+		}
+	}
+	.prices{
+		.dark{
+			.container{	
+				.table-box{
+					padding:60px;
+					.table-title{
+						padding-bottom:10px;
+					}
+				}
+			}
+		}
+		.light{		
+			.container{
+				.table-box{
+					padding:60px;
+					
 				}
 			}
 		}
