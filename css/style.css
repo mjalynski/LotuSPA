@@ -90,7 +90,6 @@ p {
   letter-spacing: 2px;
   border-radius: 5px;
   padding: 15px 10px;
-  width: 40%;
 }
 .main-slider .slide .container .row .col-md-6 .slider-btn:hover {
   color: #ffffff;
@@ -260,6 +259,7 @@ p {
 .section-comments {
   padding: 70px 0px;
 }
+.section-comments .container .row .col-sm-12 h2,
 .section-comments .container .row .col-sm-12 h5 {
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
@@ -526,7 +526,7 @@ p {
   padding-top: 150px;
   padding-bottom: 50px;
 }
-.section-our-team .container .admission .col-sm-12 h1 {
+.section-our-team .container .admission .col-sm-12 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   color: #63475e;
@@ -565,7 +565,7 @@ p {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.section-portfolio .container .row h4 {
+.section-portfolio .container .row h2 {
   color: #e66393;
   font-size: 40px;
   text-transform: uppercase;
@@ -948,7 +948,7 @@ p {
 .footer-nav .container .row .col-sm-4 .phone-number {
   display: block;
 }
-.footer-nav .container .row .col-sm-4 h6 {
+.footer-nav .container .row .col-sm-4 .footer-col-title {
   font-family: 'Oswald', sans-serif;
   font-size: 25px;
   border-bottom: 1px solid #ffffff;
@@ -986,6 +986,9 @@ footer .container .row p {
   }
   .slide .container .row .slider-img {
     display: none;
+  }
+  .slide .container .row .col-md-6 .slider-btn {
+    width: 50%;
   }
 }
 @media (min-width: 320px) {
@@ -1026,6 +1029,9 @@ footer .container .row p {
   }
   .slide .container .row .slider-img {
     display: none;
+  }
+  .slide .container .row .slider-btn {
+    width: 40%;
   }
   .section-services .container {
     padding: 50px 0px;
@@ -1140,6 +1146,7 @@ footer .container .row p {
   }
   .slide .container .row .col-md-6 .slider-btn {
     float: left;
+    width: 60%;
   }
   .slide .container .row .slider-img {
     display: flex;
@@ -1174,6 +1181,9 @@ footer .container .row p {
   }
 }
 @media (min-width: 992px) {
+  .slide .container .row .col-md-6 .slider-btn {
+    width: 40%;
+  }
   .section-services .container {
     background: url('../img/sexy-3295729_1280(4).jpg');
     background-size: cover;

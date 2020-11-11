@@ -116,7 +116,6 @@ p{
 						letter-spacing:2px;
 						border-radius: 5px;
 						padding:15px 10px;
-						width:40%;
 					}
 					.slider-btn:hover{
 						color:@white;
@@ -338,7 +337,7 @@ p{
 	.container{
 		.row{
 			.col-sm-12{
-				h5{
+				h2,h5{
 					font-family:@headings-font;
 					font-size:@headings-middle-desktop;
 					color:@dark-violet;
@@ -665,7 +664,7 @@ p{
 			padding-top:150px;
 			padding-bottom:50px;
 			.col-sm-12{
-				h1{
+				h2{
 					font-family:@headings-font;
 					font-size:@headings-middle-desktop;
 					color:@dark-violet;
@@ -712,7 +711,7 @@ p{
 		padding-top:50px;
 		padding-bottom:50px;
 		.row{
-			h4{
+			h2{
 				color:@pink;
 				font-size:@headings-middle-desktop;
 				text-transform:uppercase;
@@ -1153,7 +1152,7 @@ p{
 				.phone-number{
 					display:block;
 				}
-				h6{
+				.footer-col-title{
 					font-family:@headings-font;
 					font-size:@paragraph-middle-desktop;
 					border-bottom:1px solid @white;
@@ -1202,6 +1201,11 @@ footer{
 			.row{
 				.slider-img{
 					display:none;
+				}
+				.col-md-6{
+					.slider-btn{
+						width:50%;
+					}
 				}
 			}
 		}
@@ -1255,9 +1259,12 @@ footer{
 				.slider-img{
 					display:none;
 				}
+				.slider-btn{
+						width:40%;
+					}
+				}
 			}
 		}
-	}
 .section-services{
 		.container{
 			padding:50px 0px;
@@ -1416,10 +1423,11 @@ footer{
 						text-align:left;
 					}
 					.slider-desc{
-						text-align:left;							
+						text-align:left;
 					}
 					.slider-btn{
 						float:left;
+						width:60%;
 					}
 				}
 				.slider-img{
@@ -1487,6 +1495,17 @@ footer{
 	}
 }
 @media(min-width: 992px) {
+	.slide{
+		.container{
+			.row{
+				.col-md-6{
+					.slider-btn{
+						width:40%;
+					}
+				}
+			}
+		}
+	}
 	.section-services{
 			.container{
 				background:url('../img/sexy-3295729_1280(4).jpg');
